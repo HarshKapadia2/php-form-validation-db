@@ -1,12 +1,15 @@
 <?php
+	$success = "";
+	$error = "";
+
 	if(isset($_POST["submit"]))
 	{
 		$email = $_POST["email"];
 
 		if(filter_var($email, FILTER_VALIDATE_EMAIL))
-			echo "e-mail is valid.<br>";
+			$success = "The e-mail is valid.";
 		else
-			echo "e-mail is not valid.<br>";
+			$error = "The e-mail is not valid.";
 	}
 ?>
 
@@ -25,7 +28,13 @@
 
 		<h1>Form Validation</h1>
 
-		<div id="error"></div>
+		<?php if($error != ""): ?>
+			<div id="error"><?php echo $error; ?></div>
+		<?php endif; ?>
+		
+		<?php if($success != ""): ?>
+			<div id="success"><?php echo $success; ?></div>
+		<?php endif; ?>
 
 		<form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="POST">
 			<label for="name">Name: </label>

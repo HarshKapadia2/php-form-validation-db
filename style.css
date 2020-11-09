@@ -18,7 +18,14 @@ body
 
 #error
 {
-	color: yellow;
+	color: orange;
+	padding: 0.5em 0;
+}
+
+#success
+{
+	color: greenyellow;
+	padding: 0.5em 0;
 }
 
 form
