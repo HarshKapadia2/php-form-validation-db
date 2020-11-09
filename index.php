@@ -15,11 +15,17 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="./style.css">
+
 		<title>PHP Form Validation Assig</title>
 	</head>
 
 	<body>
-		<div class="error"></div>
+
+		<h1>Form Validation</h1>
+
+		<div id="error"></div>
 
 		<form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="POST">
 			<label for="name">Name: </label>
