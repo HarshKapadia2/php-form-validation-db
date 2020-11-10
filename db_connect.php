@@ -12,14 +12,13 @@
 		$pdo = new PDO($dsn, $user, $password);
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-		echo "Database connected successfully...";
-		// echo "Database connected successfully...<br><br>Data fetched from table:<br>";
+		echo "Database connected successfully...<br><br>Data fetched from table:<br>";
 
-		// $table_name = getenv("DB_TABLE_NAME");
-		// $query = $pdo->query("SELECT * FROM $table_name");
+		$table_name = getenv("DB_TABLE_NAME");
+		$query = $pdo->query("SELECT * FROM $table_name");
 
-		// while($row = $query->fetch(PDO::FETCH_ASSOC))
-		// 	echo $row["id"] . ": " . $row["name"] . "<br>";
+		while($row = $query->fetch(PDO::FETCH_ASSOC))
+			echo $row["id"] . ": " . $row["name"] . "<br>";
 	}
 	catch(PDOException $e)
 	{

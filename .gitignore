@@ -1,1 +1,3 @@
 .htaccess
+*.sql
+php_hosting.md
