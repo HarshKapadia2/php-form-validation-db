@@ -30,15 +30,25 @@ body
 
 form
 {
-	padding: 1em;
+	margin: 1em;
 }
 
-input
+input, #mysql
 {
 	margin-bottom: 2em;
+}
+
+#mysql h1
+{
+	margin-bottom: 0.5em;
 }
 
 a
 {
 	color: aqua;
+}
+
+footer
+{
+	margin: 1em 0;
 }

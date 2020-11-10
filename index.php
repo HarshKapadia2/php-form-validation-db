@@ -48,9 +48,13 @@
 			<input type="submit" name="submit" value="Submit">
 		</form>
 
+		<div id="mysql">
+			<h1>MySQL DB Connectivity</h1>
 
-		<h1>MySQL DB Connectivity</h1>
+			<a href="db_connect.php">Connect to MySQL.</a>
+		</div>
+		<hr>
 
-		<a href="db_connect.php">Connect to MySQL.</a>
+		<footer>View the code on <a href="https://github.com/HarshKapadia2/php-form-validation-db" target="_blank" rel="noreferrer">GitHub</a>.</footer>
 	</body>
 </html>
