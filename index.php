@@ -47,5 +47,10 @@
 
 			<input type="submit" name="submit" value="Submit">
 		</form>
+
+
+		<h1>MySQL DB Connectivity</h1>
+
+		<a href="db_connect.php">Connect to MySQL.</a>
 	</body>
 </html>
